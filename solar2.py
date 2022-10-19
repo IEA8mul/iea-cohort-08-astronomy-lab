@@ -84,10 +84,13 @@ def into_range(x, range_min, range_max):
 if __name__ == "__main__":
     
 # Close Encounters latitude, longitude
-    location = (40.602778, -104.741667)
-    
+#    location = (40.602778, -104.741667)
+    location = (42.36331, -71.01681) 
+
 # Fourth of July, 2022 at 11:20 am MDT (-6 hours)
-    when = (2022, 7, 4, 11, 20, 0, -6)
+#    when = (2022, 7, 4, 11, 20, 0, -6)
+# random entered date from EDT (-4 hours)
+    when = (2022, 10, 19, 8, 8, 0, -4)
     
 # Get the Sun's apparent location in the sky
     azimuth, elevation = sunpos(when, location, True)
